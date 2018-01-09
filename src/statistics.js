@@ -20,7 +20,7 @@ exports.analyze = function(data) {
     checkForErrors(data);
 
     // Setting the values to results.
-    results.min = Math.min.apply(null, data);
+    results.min = Math.max.apply(null, data);
     results.max = Math.max.apply(null, data);
     results.mean = getMean(data);
     results.range = getRange(data);
